@@ -188,7 +188,10 @@
     .ds-section-headline--rule-emphasised::before, ds-section-headline--rule-emphasised::before
         background: $overlay2
 
-    .styled-masthead, .ds-masthead, .ds-layout-masthead
+    .styled-masthead
+        background: $base !important
+
+    .ds-masthead, .ds-layout-masthead
         background: $mantle !important
 
     .ds-form-input
