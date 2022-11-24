@@ -215,6 +215,11 @@
     *[class*="promo"], *[class*="Promo"]
         display: none
 
+    // search icon on `/search?q=`
+    .ds-button
+        svg[aria-labelledby="search-adjacent-icon"] path
+            fill: $crust
+
     .ds-footer
         background: $crust
 
