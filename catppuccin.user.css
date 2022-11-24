@@ -122,12 +122,12 @@
         $base      = hsl(240, 21.1%, 14.9%)
         $mantle    = hsl(240, 21.3%, 12%)
         $crust     = hsl(240, 22.7%, 8.6%)
-    
+
     :root
         background: $base
-        
+
         --ds-color-economist-red: $red
-        
+
         // used for text
         --ds-color-london-5: $text
         --ds-color-london-10: $subtext1
@@ -137,21 +137,27 @@
         --ds-color-london-85: $subtext0
         --ds-color-london-95: $subtext0
         --ds-color-london-100: $subtext1
-        
+
         --ds-color-london-85: $overlay0
-        
+        --ds-color-los-angeles-95: $surface0
+
         // used for links
         --ds-color-chicago-20: darken($blue, 10%)
         --ds-color-chicago-30: $blue
         --ds-color-chicago-45: $lavender
-        
+
         // used for :active
         --ds-color-hong-kong-55: $rosewater
-        
+
         // older sections
         --lwc-cardColorBackground: $mantle
         --slds-c-card-text-color: $text
-        
+
+    main a:focus
+        background: unset !important;
+
+
+    // login & stuff
     .slds-button_brand
         color: $crust
         background: $blue !important
@@ -159,7 +165,7 @@
         &:hover
             background: darken($blue, 10%) !important
             border: darken($blue, 10%) !important
-        
+
     .slds-card
         background: $mantle !important
         p, span, a, div
@@ -169,25 +175,25 @@
             color: $text !important
         .separator
             background: $mantle !important
-            
+
     .slds-has-error
         border: $red !important
-        
+
     .css-1mpoj98
         background: $mantle !important;
-    
+
     span[type="1843"]
         color: $red
-        
+
     .ds-section-headline--rule-emphasised::before, ds-section-headline--rule-emphasised::before
         background: $overlay2
-        
+
     .styled-masthead, .ds-masthead, .ds-layout-masthead
         background: $mantle !important
-        
+
     .ds-form-input
         background: $mantle !important
-        
+
     .ds-navigation-disclosure--icon-search::before
         background-image: none !important
         mask-image: url("https://cdn.design-system.economist.com/assets/5.94.1/common/static/images/icons/material-search.svg")
@@ -195,20 +201,20 @@
         background-color: $subtext0
         mask-position: 0 0
         -webkit-mask-position: 0 0
-        
+
     .ds-masthead-nav-alpha__item .path-foreground
         fill: $subtext0
-        
+
     // this is on a bright background, so invert foreground
-    a.ds-call-to-action
+    a.ds-call-to-action, a.ds-call-to-action--inverse
         color: $crust
-        
+
     *[class*="promo"], *[class*="Promo"]
         display: none
-        
+
     .ds-footer
         background: $crust
-        
+
     .ds-share-link.ds-share-link--inverse > svg
         .path-background
             fill: $surface2 !important
